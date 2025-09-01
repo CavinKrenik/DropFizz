@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer className="bg-kraft-brown py-6 text-center shadow-inner">
       <div className="container mx-auto px-4">
-        <p className="text-sm mb-2">Handmade with Goodness in [City, State]</p>
+        <p className="text-sm mb-2">Handmade with Goodness in [Auburn, Washington]</p>
         <nav aria-label="Footer">
           <ul className="flex justify-center space-x-4 mb-2">
             <li><Link to="/shop" className="hover:text-eco-green">Shop</Link></li>
