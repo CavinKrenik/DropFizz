@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import SEO from '../seo/SEO'
+
 function Shop() {
   const products = [
     { id: 'toilet', name: 'Toilet Fizz Bombs', price: 2.99, image: '/toilet.jpg' },
@@ -8,9 +10,17 @@ function Shop() {
     { id: 'mop', name: 'All-Purpose Mop Bucket Bombs', price: 2.99, image: '/mop.jpg' },
     { id: 'holiday-kit', name: 'Holiday Kit (4–6 pack)', price: 17.99, image: '/holiday.jpg' },
   ]
+
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6 text-center">Shop Our Organic Bombs</h1>
+      <SEO
+        title="Shop | J&R’s Cleaning Organic Bombs"
+        description="Browse toilet fizz bombs, drain fresheners, mold & mildew bombs, laundry refreshers, and holiday kits."
+        url="https://example.com/shop"
+      />
+
+      <h1 className="sr-only">Shop</h1>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map(product => (
           <div key={product.id} className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
@@ -25,4 +35,5 @@ function Shop() {
     </div>
   )
 }
+
 export default Shop

@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom'
+import SEO from '../seo/SEO'
+
 const PRODUCT_DATA = {
   toilet: { name: 'Toilet Fizz Bombs', description: 'Drop one in your toilet for a natural fizz that helps clean and deodorize.', ingredients: 'Baking soda, citric acid, peppermint essential oil.', price: 2.99, image: '/toilet.jpg' },
   sink: { name: 'Sink/Drain Deodorizer Bombs', description: 'Freshen smelly drains and disposals with a satisfying fizz.', ingredients: 'Baking soda, citric acid, lemon essential oil.', price: 2.99, image: '/sink.jpg' },
@@ -7,23 +9,44 @@ const PRODUCT_DATA = {
   mop: { name: 'All-Purpose Mop Bucket Bombs', description: 'Drop in a bucket for whole-home floors and surfaces.', ingredients: 'Baking soda, citric acid, eucalyptus essential oil.', price: 2.99, image: '/mop.jpg' },
   'holiday-kit': { name: 'Holiday Kit (4–6 pack)', description: 'Festive scents perfect for gifting.', ingredients: 'Assorted: peppermint, pine, cinnamon, citrus.', price: 17.99, image: '/holiday.jpg' }
 }
+
 function ProductDetail() {
   const { id } = useParams()
   const product = PRODUCT_DATA[id] || { name: 'Product', description: 'Details coming soon.', ingredients: '', price: 0, image: '/placeholder-product.jpg' }
+
   return (
     <div className="flex flex-col md:flex-row gap-8">
-      <div className="md:w-1/2"><img src={product.image} alt={product.name} className="w-full rounded-lg shadow-md" /></div>
+      <SEO
+        title={`${product.name} | J&R’s Cleaning Organic Bombs`}
+        description={product.description}
+        image={product.image}
+        url={`https://example.com/product/${id}`}
+      />
+
+      <div className="md:w-1/2">
+        <img src={product.image} alt={product.name} className="w-full rounded-lg shadow-md" />
+      </div>
       <div className="md:w-1/2">
         <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
         <p className="text-xl mb-4">${product.price.toFixed(2)}</p>
         <p className="mb-4">{product.description}</p>
-        {product.ingredients && (<><h2 className="font-bold mb-2">Ingredients</h2><p className="mb-4">{product.ingredients}</p></>)}
-        <h2 className="font-bold mb-2">Directions</h2><p className="mb-4">Drop → Fizz → Scrub lightly.</p>
-        <h2 className="font-bold mb-2">Safety</h2><p className="mb-6">For cleaning use only. Keep out of reach of children & pets. Avoid eye contact.</p>
-        <select className="mb-4 p-2 border rounded" aria-label="Select quantity"><option>Quantity: 1</option><option>Quantity: 3</option><option>Quantity: 6</option></select>
+        {product.ingredients && (<>
+          <h2 className="font-bold mb-2">Ingredients</h2>
+          <p className="mb-4">{product.ingredients}</p>
+        </>)}
+        <h2 className="font-bold mb-2">Directions</h2>
+        <p className="mb-4">Drop → Fizz → Scrub lightly.</p>
+        <h2 className="font-bold mb-2">Safety</h2>
+        <p className="mb-6">For cleaning use only. Keep out of reach of children & pets. Avoid eye contact.</p>
+        <select className="mb-4 p-2 border rounded" aria-label="Select quantity">
+          <option>Quantity: 1</option>
+          <option>Quantity: 3</option>
+          <option>Quantity: 6</option>
+        </select>
         <button onClick={() => console.log('Add to Cart - Integrate Stripe here')} className="bg-eco-green text-white px-6 py-3 rounded-full font-bold shadow-md">Add to Cart</button>
       </div>
     </div>
   )
 }
+
 export default ProductDetail

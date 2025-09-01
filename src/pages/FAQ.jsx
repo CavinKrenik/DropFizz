@@ -1,6 +1,13 @@
+import SEO from '../seo/SEO'
+
 function FAQ() {
   return (
     <div>
+      <SEO
+        title="FAQ | J&R’s Cleaning Organic Bombs"
+        description="Answers about safety, storage, shipping, returns, and how our natural fizzing cleaners work."
+        url="https://example.com/faq"
+      />
       <h1 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h1>
       <div className="space-y-4">
         <div className="bg-white p-4 rounded-lg shadow-md">
