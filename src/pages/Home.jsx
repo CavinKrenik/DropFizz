@@ -30,7 +30,7 @@ function Home() {
               J&R’s Organic Cleaning Bombs
             </p>
             <p className="text-lg sm:text-xl mb-4">
-              Eco-Friendly• Handmade • Safe • Effective
+              Eco-Friendly • Handmade • Safe • Effective
             </p>
             <p className="mb-6">
               Made with simple, organic ingredients. No toxins. No plastic.
