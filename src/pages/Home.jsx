@@ -27,10 +27,10 @@ function Home() {
           <div className="text-center md:text-left max-w-xl">
             <h1 className="sr-only">J&R’s Organic Cleaning Bombs</h1>
             <p className="text-2xl sm:text-3xl font-bold mb-3">
-              Welcome to J&R’s Organic Cleaning Bombs
+              J&R’s Organic Cleaning Bombs
             </p>
             <p className="text-lg sm:text-xl mb-4">
-              Eco • Handmade • Safe • Effective
+              Eco-Friendly• Handmade • Safe • Effective
             </p>
             <p className="mb-6">
               Made with simple, organic ingredients. No toxins. No plastic.
