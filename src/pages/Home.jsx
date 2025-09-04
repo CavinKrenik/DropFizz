@@ -50,7 +50,7 @@ function Home() {
         <h2 className="text-2xl font-bold mb-4 text-center">Featured Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img src="/placeholder-product.jpg" alt="Starter Pack (5 Bombs)" className="w-full h-40 object-cover mb-2 rounded" />
+            <img src="/starter.jpg" alt="Starter Pack (5 Bombs)" className="w-full h-40 object-cover mb-2 rounded" />
             <h3 className="font-bold">Starter Pack (6 Bombs)</h3>
             <p>$11.99</p>
           </div>
