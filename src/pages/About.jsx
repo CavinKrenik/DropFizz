@@ -7,7 +7,7 @@ function About() {
       <SEO
         title="About | J&R’s Cleaning Organic Bombs"
         description="Our small-batch, eco-friendly mission: simple ingredients, plastic-free packaging, and cleaner homes without harsh chemicals."
-        url="https://example.com/about"
+        url="https://dropfizzers.com/about"
         image="/logo.png"
       />
 

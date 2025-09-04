@@ -6,7 +6,7 @@ function Contact() {
       <SEO
         title="Contact | J&R’s Cleaning Organic Bombs"
         description="Get in touch with our team for orders, wholesale, or questions about ingredients and usage."
-        url="https://example.com/contact"
+        url="https://dropfizzers.com/contact"
       />
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <form className="bg-white p-4 rounded-lg shadow-md max-w-md" action="#" method="post">

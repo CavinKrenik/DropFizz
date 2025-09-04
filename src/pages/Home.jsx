@@ -8,7 +8,7 @@ function Home() {
         title="J&R’s Cleaning Organic Bombs — Drop. Fizz. Shine."
         description="Eco-friendly, handmade cleaning bombs for toilets, sinks, showers, laundry, and floors."
         image="/logo.png"
-        url="https://example.com/"
+        url="https://dropfizzers.com/"
       />
 
       {/* HERO: logo left, text right */}

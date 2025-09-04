@@ -6,7 +6,7 @@ function Subscription() {
       <SEO
         title="Subscription | J&R’s Cleaning Organic Bombs"
         description="Subscribe and save: 15 bombs delivered monthly. Cancel anytime."
-        url="https://example.com/subscription"
+        url="https://dropfizzers.com/subscription"
       />
       <h1 className="text-3xl font-bold mb-4">Monthly Subscription</h1>
       <p>Never run out of fizz! Get a monthly box of 15 bombs for $29.99. Cancel anytime.</p>
