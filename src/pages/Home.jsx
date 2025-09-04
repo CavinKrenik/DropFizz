@@ -55,7 +55,7 @@ function Home() {
             <p>$11.99</p>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img src="/placeholder-product.jpg" alt="Holiday Kit" className="w-full h-40 object-cover mb-2 rounded" />
+            <img src="/holiday.jpg" alt="Holiday Kit" className="w-full h-40 object-cover mb-2 rounded" />
             <h3 className="font-bold">Holiday Kit</h3>
             <p>$14.99–$19.99</p>
           </div>
