@@ -29,7 +29,11 @@ function ProductDetail() {
       </div>
       <div className="md:w-1/2">
         <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-        <p className="text-xl mb-4">${product.price.toFixed(2)}</p>
+        <p className="text-xl mb-4">
+          {typeof product.price === 'number'
+            ? `$${product.price.toFixed(2)}`
+            : `$${product.price}`}
+        </p>
         <p className="mb-4">{product.description}</p>
         {product.ingredients && (<>
           <h2 className="font-bold mb-2">Ingredients</h2>

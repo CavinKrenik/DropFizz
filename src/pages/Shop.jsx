@@ -8,7 +8,7 @@ function Shop() {
     { id: 'mold', name: 'Shower Mold & Mildew Bombs', price: 3.49, image: '/mold.jpg' },
     { id: 'laundry', name: 'Laundry Freshening Bombs', price: 2.99, image: '/laundry.jpg' },
     { id: 'mop', name: 'All-Purpose Mop Bucket Bombs', price: 2.99, image: '/mop.jpg' },
-    { id: 'holiday-kit', name: 'Holiday Kit (4, 6, or 12 pack)', price: '4.99–6.99–15.99', image: '/holiday.jpg' },
+    { id: 'holiday-kit', name: 'Holiday Kit (4, 6, or 12 pack)', price: '4.99 to 15.99', image: '/holiday.jpg' },
     { id: 'monthly', name: 'Monthly (15 pack)', price: 29.99, image: '/monthly.jpg' },
   ]
 
@@ -27,7 +27,11 @@ function Shop() {
           <div key={product.id} className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
             <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded" />
             <h2 className="text-xl font-bold mb-2">{product.name}</h2>
-            <p className="text-lg mb-4">${product.price.toFixed(2)}</p>
+            <p className="text-lg mb-4">
+              {typeof product.price === 'number'
+                ? `$${product.price.toFixed(2)}`
+                : `$${product.price}`}
+            </p>
             <Link to={`/product/${product.id}`} className="bg-eco-green text-white px-4 py-2 rounded-full mr-2">View Details</Link>
             <button onClick={() => console.log('Add to Cart - Integrate Stripe here')} className="bg-fizz-blue text-white px-4 py-2 rounded-full">Add to Cart</button>
           </div>
