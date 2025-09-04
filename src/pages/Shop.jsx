@@ -9,6 +9,7 @@ function Shop() {
     { id: 'laundry', name: 'Laundry Freshening Bombs', price: 2.99, image: '/laundry.jpg' },
     { id: 'mop', name: 'All-Purpose Mop Bucket Bombs', price: 2.99, image: '/mop.jpg' },
     { id: 'holiday-kit', name: 'Holiday Kit (4–6 pack)', price: 17.99, image: '/holiday.jpg' },
+    { id: 'monthly', name: 'Monthly (15 pack)', price: 29.99, image: '/monthly.jpg' },
   ]
 
   return (
@@ -16,7 +17,7 @@ function Shop() {
       <SEO
         title="Shop | J&R’s Cleaning Organic Bombs"
         description="Browse toilet fizz bombs, drain fresheners, mold & mildew bombs, laundry refreshers, and holiday kits."
-        url="https://example.com/shop"
+        url="https://dropfizzers.com/shop.com/shop"
       />
 
       <h1 className="sr-only">Shop</h1>
