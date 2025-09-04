@@ -56,8 +56,8 @@ function Home() {
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
             <img src="/holiday.jpg" alt="Holiday Kit" className="w-full h-40 object-cover mb-2 rounded" />
-            <h3 className="font-bold">Holiday Kit</h3>
-            <p>$4.99–$6.99–$15.99</p>
+            <h3 className="font-bold">Holiday Kit (24 pack)</h3>
+            <p>$35.99</p>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
             <img src="/monthly.jpg" alt="Subscription Box" className="w-full h-40 object-cover mb-2 rounded" />
