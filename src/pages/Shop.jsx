@@ -8,7 +8,7 @@ function Shop() {
     { id: 'mold', name: 'Shower Mold & Mildew Bombs', price: 3.49, image: '/mold.jpg' },
     { id: 'laundry', name: 'Laundry Freshening Bombs', price: 2.99, image: '/laundry.jpg' },
     { id: 'mop', name: 'All-Purpose Mop Bucket Bombs', price: 2.99, image: '/mop.jpg' },
-    { id: 'holiday-kit', name: 'Holiday Kit (4, 6, or 12 pack)', price: 4.99–15.99, image: '/holiday.jpg' },
+    { id: 'holiday-kit', name: 'Holiday Kit (4, 6, or 12 pack)', price: '4.99–6.99–15.99', image: '/holiday.jpg' },
     { id: 'monthly', name: 'Monthly (15 pack)', price: 29.99, image: '/monthly.jpg' },
   ]
 
