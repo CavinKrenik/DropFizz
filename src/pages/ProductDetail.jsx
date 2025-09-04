@@ -7,7 +7,7 @@ const PRODUCT_DATA = {
   mold: { name: 'Shower Mold & Mildew Bombs', description: 'Tea tree powered fizz to help lift mildew and soap scum.', ingredients: 'Baking soda, borax (optional), tea tree essential oil.', price: 3.49, image: '/mold.jpg' },
   laundry: { name: 'Laundry Freshening Bombs', description: 'Boost freshness for gym clothes and towels.', ingredients: 'Washing soda, baking soda, lavender essential oil.', price: 2.99, image: '/laundry.jpg' },
   mop: { name: 'All-Purpose Mop Bucket Bombs', description: 'Drop in a bucket for whole-home floors and surfaces.', ingredients: 'Baking soda, citric acid, eucalyptus essential oil.', price: 2.99, image: '/mop.jpg' },
-  'holiday-kit': { name: 'Holiday Kit (4–6 pack)', description: 'Festive scents perfect for gifting.', ingredients: 'Assorted: peppermint, pine, cinnamon, citrus.', price: 17.99, image: '/holiday.jpg' },
+  'holiday-kit': { name: 'Holiday Kit (4–6 pack)', description: 'Festive scents perfect for gifting.', ingredients: 'Assorted: peppermint, pine, cinnamon, citrus.', price: '4.99–6.99–15.99', image: '/holiday.jpg' },
   monthly: { name: 'Variety 15 count', description: 'Variety pack of 15 for a months worth of cleaning.', ingredients: 'Washing soda, baking soda, lavender essential oil.', price: 29.99, image: '/monthly.jpg' },
 }
 
