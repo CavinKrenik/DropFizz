@@ -11,11 +11,11 @@ function HolidayKit() {
       <h1 className="text-3xl font-bold mb-4">Holiday Kits</h1>
       <p>Gift-ready bundle with festive scents like peppermint, pine, cinnamon, and citrus. Package with red & gold accents.</p>
       <ul className="list-disc pl-6">
-        <li>Winter Wonderland (8)</li>
-        <li>Holiday Cheer (8)</li>
-        <li>Festive Fizz (8)</li>
+        <li>Winter Wonderland (4)</li>
+        <li>Holiday Cheer (4)</li>
+        <li>Festive Fizz (4)</li>
       </ul>
-      <p className="mt-4">Prices: $35.99</p>
+      <p className="mt-4">Prices: $23.99</p>
     </div>
   )
 }
