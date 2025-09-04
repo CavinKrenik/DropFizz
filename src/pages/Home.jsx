@@ -17,7 +17,7 @@ function Home() {
           {/* Logo (left) */}
           <div className="flex-shrink-0">
             <img
-              src="/logo.svg"                // or /logo.png
+              src="/logo.png"                // or /logo.png
               alt="J&R’s Cleaning Organic Bombs"
               className="h-40 sm:h-56 md:h-64 lg:h-72 w-auto drop-shadow-lg"
             />
@@ -25,9 +25,9 @@ function Home() {
 
           {/* Text (right) */}
           <div className="text-center md:text-left max-w-xl">
-            <h1 className="sr-only">J&R’s Cleaning Organic Bombs</h1>
+            <h1 className="sr-only">J&R’s Organic Cleaning Bombs</h1>
             <p className="text-2xl sm:text-3xl font-bold mb-3">
-              Welcome to J&R’s Cleaning Organic Bombs
+              Welcome to J&R’s Organic Cleaning Bombs
             </p>
             <p className="text-lg sm:text-xl mb-4">
               Eco • Handmade • Safe • Effective
@@ -51,7 +51,7 @@ function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <img src="/placeholder-product.jpg" alt="Starter Pack (5 Bombs)" className="w-full h-40 object-cover mb-2 rounded" />
-            <h3 className="font-bold">Starter Pack (5 Bombs)</h3>
+            <h3 className="font-bold">Starter Pack (6 Bombs)</h3>
             <p>$11.99</p>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-md">
@@ -70,7 +70,7 @@ function Home() {
       {/* Testimonials */}
       <section className="py-8 text-center">
         <h2 className="text-2xl font-bold mb-4">What Customers Say</h2>
-        <p className="italic">"This bomb cleared my drain in 2 minutes!" — Happy Customer</p>
+        <p className="italic">"This Toilet Bomb left my bowl sparkling in 2 minutes!" — David</p>
       </section>
     </div>
   )
